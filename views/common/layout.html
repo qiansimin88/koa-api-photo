@@ -1,0 +1,26 @@
+  <!DOCTYPE html>
+  {# 基础布局页面 #}
+  <html>
+  <head>
+      <title>{{title}}</title> 
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      {% block head %}
+      {% endblock %}
+  </head>
+  <body>
+    {# 引入头部 #}
+      {% include "./header.html" %}
+
+    {# 主题内容 #}
+      {% block body %}
+      {% endblock %}
+      
+    {# 引入尾部 #}
+      {% include "./footer.html" %}
+
+
+      {% block content %}
+      {% endblock %}
+  </body>
+
+  </html>

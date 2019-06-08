@@ -1,0 +1,11 @@
+{# 继承基础页面 #}
+{% extends "../common/layout.html" %}
+
+{# 覆盖基础页面的hea #}
+{% block head %}
+<link rel="stylesheet" href="css/main.css">
+{% endblock %}
+
+{% block body %}
+<div>{{ content }}1111</div>
+{% endblock %}

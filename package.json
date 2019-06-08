@@ -1,0 +1,32 @@
+{
+  "name": "koa-api-photo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "qsm",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/cors": "^3.0.0",
+    "chalk": "^2.4.2",
+    "crypto": "^1.0.1",
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-multer": "^1.0.2",
+    "koa-nunjucks-2": "^3.0.2",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "log4js": "^4.3.0",
+    "mongoose": "^5.5.11",
+    "mysql2": "^1.6.5",
+    "nunjucks": "^3.2.0",
+    "request": "^2.88.0",
+    "sequelize": "^5.8.6",
+    "uuid": "^3.3.2"
+  }
+}
