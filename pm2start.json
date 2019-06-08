@@ -1,0 +1,14 @@
+{
+    "apps" : [{
+      "name"        : "node-koa-api-photo",
+      "script"      : "./index.js",
+      "watch"       : true,
+      "ignore_watch": ["uploads","public/img","node_modules","logs"],
+      "max_memory_restart": "200M",
+      "error_file": "./pm2log/node_error.log",
+      "out_file"   : "./logs/node_info.log", 
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }]
+  }
