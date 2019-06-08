@@ -1,5 +1,10 @@
 const mongoose = require('mongoose');
 
+process.on('SIGINT', () => {
+    closeMongo();
+    process.exit(1);
+})
+
 function collectMongo () {
     mongoose.connect('mongodb://127.0.0.1:27017/photo', { useNewUrlParser: true });
     const db = mongoose.connection;
