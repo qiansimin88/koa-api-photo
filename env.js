@@ -6,7 +6,7 @@ let photoUploadUri = null;   // 图片上传的地址
 if ( env === 'dev' ) {
     photoUploadUri = 'http://localhost:3721/img/';
 }else if ( env === 'production' ) {
-    photoUploadUri = 'https://photo.api.qiansimin.xyz/'
+    photoUploadUri = 'https://photo.api.qiansimin.xyz/img/'
 }
 
 module.exports = {
