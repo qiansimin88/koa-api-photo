@@ -2,7 +2,6 @@
     "apps" : [{
       "name"        : "node-koa-api-photo",
       "script"      : "./index.js",
-      "watch"       : true,
       "node_args"   : "--harmony",  
       "ignore_watch": ["uploads","public/img","node_modules","logs", "*.sh"],
       "max_memory_restart": "200M",
