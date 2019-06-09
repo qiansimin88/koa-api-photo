@@ -4,6 +4,7 @@ const auth = require('../middleware/auth/index');  // 是否登录的局部中�
 const multer = require('koa-multer');  // 上传中间件
 const uuid = require('uuid')
 const path = require('path')
+const { photoUploadUri } = require('../env');
 
 // const uploadConf = multer({
 //     dest: 'uploads/'  // 存储的位置
@@ -84,7 +85,7 @@ module.exports = ( router ) => {
         const {
           id
         } = ctx.req.body   // 相册id   // 先用本地服务器硬盘  
-        await photo.addPhoto(ctx.state.user.id, `http://localhost:3000/img/${file.filename}`, id)
+        await photo.addPhoto(ctx.state.user.id, `${photoUploadUri}${file.filename}`, id)
         await next()
     }, responseOK)
     /**
